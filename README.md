@@ -52,3 +52,14 @@
    3. In the JetBrains Toolbox settings, disable `Launch Toolbox App at system startup`
 
    4. Install the IDEs I need
+
+## TODOs
+
+I want to track how the system is configured. This includes dotfiles and
+packages. It would simplify reinstallation of my system if needed. I need this
+for work, so this is important.
+
+- Track dotfiles
+- Track all official packages I've installed (`pacman -Qqe | grep -Fv -f <(pacman -Qqm)` includes the core packages from the install.. is it okay?)
+- Track all AUR packages (`pacman -Qqm` lists them)
+- Regularly remove unused packages (orphans) with [`pacman -Qdtq | pacman -Rns -`](https://wiki.archlinux.org/title/Pacman/Tips_and_tricks)
