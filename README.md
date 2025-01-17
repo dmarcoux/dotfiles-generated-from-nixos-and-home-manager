@@ -38,3 +38,17 @@
    ```bash
    yay mullvad-vpn-bin
    ```
+
+6. Setup JetBrains Toolbox and IDEs
+
+   1. Install JetBrains Toolbox
+
+      ```bash
+      yay jetbrains-toolbox
+      ```
+
+   2. Open the JetBrains Toolbox and log in with my account
+
+   3. In the JetBrains Toolbox settings, disable `Launch Toolbox App at system startup`
+
+   4. Install the IDEs I need
