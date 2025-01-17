@@ -53,6 +53,52 @@
 
    4. Install the IDEs I need
 
+7. Clone this repository
+
+   ```bash
+   git clone git@github.com:dmarcoux/dotfiles-endeavouros.git ~/dotfiles
+   ```
+
+8. Setup Nix and home-manager
+
+   1. Install Nix
+
+      ```bash
+      sudo pacman -S nix
+      ```
+
+   2. Enable the Nix daemon
+
+      ```bash
+      sudo systemctl enable --now nix-daemon.service
+      ```
+
+   3. Add group `nix-users` to my user. This is needed for the Nix daemon
+
+      ```bash
+      sudo usermod -a -G nix-users dany
+      ```
+
+   4. Enable Nix Flakes
+
+      ```bash
+      echo -e "\n# Enables Flakes\nexperimental-features = nix-command flakes" | sudo tee --append /etc/nix/nix.conf
+      ```
+
+   5. Log out and back in to refresh the groups of my user
+
+   6. Initialize home-manager and build configuration from my dotfiles. Changes to KDE only take effect after logging out, then back in. Be sure to pick the right release version.
+
+      ```bash
+      nix run home-manager/release-24.11 -- init --switch ./home-manager
+      ```
+
+   7. If needed, change and rebuild home-manager configuration
+
+      ```bash
+      home-manager switch --flake ./home-manager -b backup
+      ```
+
 ## TODOs
 
 I want to track how the system is configured. This includes dotfiles and
