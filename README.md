@@ -19,10 +19,10 @@
 2. Open Firefox and connect to Firefox Sync. This restores my extensions and
    settings. The linkding extension must be configured.
 
-3. Install Neovim and xsel (clipboard tool).
+3. Install chezmoi, Neovim, and xsel (clipboard tool).
 
    ```bash
-   sudo pacman -S neovim xsel
+   sudo pacman -S chezmoi neovim xsel
    ```
 
 4. Setup Git
