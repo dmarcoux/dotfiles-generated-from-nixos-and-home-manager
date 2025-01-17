@@ -32,3 +32,9 @@
    git config --global user.email "git@dmarcoux.com" && \
    git config --global core.editor "nvim"
    ```
+
+5. Setup Mullvad VPN
+
+   ```bash
+   yay mullvad-vpn-bin
+   ```
