@@ -1,8 +1,10 @@
 {
   imports = [
     ./kde.nix
+    ./lf.nix
     ./neovim.nix
     ./stylix.nix
+    ./xdg.nix
   ];
 
   home = {
