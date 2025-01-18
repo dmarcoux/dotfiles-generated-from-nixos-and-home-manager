@@ -1,0 +1,29 @@
+directory: /home/dany/music
+fetchart:
+  cautious: true
+  cover_names: cover front art album folder
+  sources:
+  - filesystem
+  - coverart: release releasegroup
+  - itunes
+import:
+  copy: true
+  hardlink: false
+  link: false
+  move: false
+  reflink: false
+  resume: ask
+  write: true
+paths:
+  comp: $format/Compilations/$album%aunique{}/$track $title
+  default: $format/$albumartist/$album%aunique{}/$track $title
+  singleton: $format/Non-Album/$artist/$title
+plugins:
+- fetchart
+- info
+- lastgenre
+- missing
+- replaygain
+replaygain:
+  backend: ffmpeg
+  command: /nix/store/spafkw8li8nm14s1b6j9pz7agivzsm0i-ffmpeg-headless-6.1.2-bin/bin/ffmpeg

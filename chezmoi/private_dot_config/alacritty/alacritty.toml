@@ -1,0 +1,52 @@
+[colors.bright]
+black = "#848484"
+blue = "#186daa"
+cyan = "#087767"
+green = "#557301"
+magenta = "#7b4ecb"
+red = "#af4947"
+white = "#555555"
+yellow = "#876500"
+
+[colors.cursor]
+cursor = "#555555"
+text = "#ffffff"
+
+[colors.normal]
+black = "#ffffff"
+blue = "#186daa"
+cyan = "#087767"
+green = "#557301"
+magenta = "#7b4ecb"
+red = "#af4947"
+white = "#555555"
+yellow = "#876500"
+
+[colors.primary]
+background = "#ffffff"
+bright_foreground = "#555555"
+foreground = "#555555"
+
+[colors.selection]
+background = "#dbdbdb"
+text = "#555555"
+
+[cursor.style]
+blinking = "On"
+
+[font]
+size = 10.0
+[font.normal]
+family = "DejaVuSansM Nerd Font"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "CreateNewWindow"
+key = "T"
+mods = "Control|Shift"
+
+[mouse]
+hide_when_typing = true
+
+[window]
+opacity = 1.0

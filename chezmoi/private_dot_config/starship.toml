@@ -1,0 +1,25 @@
+add_newline = false
+format = "\\[$username@$directory\\]$git_branch$nix_shell$python$character"
+
+[character]
+error_symbol = "\\$"
+success_symbol = "\\$"
+
+[directory]
+format = "$path"
+truncate_to_repo = false
+truncation_length = 10
+
+[git_branch]
+format = " [$branch]($style) "
+style = "fg:green"
+
+[nix_shell]
+format = "| [nix-shell]($style) "
+
+[python]
+format = "(| [🐍 $virtualenv]($style) )"
+
+[username]
+format = "$user"
+show_always = true

@@ -1,0 +1,20 @@
+configuration {
+font: "DejaVuSansM Nerd Font 13";
+kb-accept-entry: "Return,Tab";
+kb-cancel: "Escape";
+kb-element-next: "";
+kb-remove-to-eol: "";
+kb-row-down: "Control+j,Down";
+kb-row-tab: "";
+kb-row-up: "Control+k,Up";
+location: 0;
+matching: "fuzzy";
+modi: "window,drun";
+monitor: "-4";
+show-icons: true;
+sort: true;
+sorting-method: "fzf";
+xoffset: 0;
+yoffset: 0;
+}
+@theme "custom"

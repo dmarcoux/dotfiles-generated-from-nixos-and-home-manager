@@ -1,0 +1,27 @@
+*.faceName: DejaVuSansM Nerd Font
+*.faceSize: 12
+*.renderFont: true
+*background: #ffffff
+*color0: #ffffff
+*color1: #af4947
+*color10: #ededed
+*color11: #dbdbdb
+*color12: #636363
+*color13: #555555
+*color14: #a93e93
+*color15: #555555
+*color2: #557301
+*color3: #876500
+*color4: #186daa
+*color5: #7b4ecb
+*color6: #087767
+*color7: #555555
+*color8: #848484
+*color9: #a0570d
+*cursorColor: #555555
+*foreground: #555555
+Sxiv.background: #636363
+Sxiv.font: DejaVu Sans-12
+Sxiv.foreground: #ededed
+Xcursor.size: 24
+Xcursor.theme: Bibata-Original-Ice

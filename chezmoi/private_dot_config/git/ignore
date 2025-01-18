@@ -1,0 +1,9 @@
+nohup.out
+*.swp
+.bash_history
+shell.local.nix
+.nix-mix.local
+.nix-hex.local
+.bundle
+.idea
+.~lock.*.odt
